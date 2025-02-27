@@ -1,32 +1,41 @@
 
-body
-{
+body{
 position: relative;
 width: 100%;
 height: 100%;
 background: url("../static/pretty wallpaper.jpeg") no-repeat center center fixed;
 background-size: cover;
+cursor: url("../static/cursor/default_cursor.png"), auto;
 }
 
-form
-{
-position: absolute;
+
+form{
+position: relative;
 width: 550px;
 height: 600px;
-left: 550px;
+left: 500px;
 top: 60px;
 
 background: rgba(255, 255, 255, 0.84);
 box-shadow: 0px 15px 40px 4px #6641AC;
 }
 
-
+.title
 {
 position: absolute;
-width: 865px;
-height: 144px;
-left: 219px;
-top: 391px;
+left: 30%;
+top: -130px;
+
+font-family: 'Pixelify Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 80px;
+line-height: 216px;
+text-align: center;
+letter-spacing: 0.035em;
+
+color: #5020A9;
+
 }
 
 
@@ -36,173 +45,144 @@ box-sizing: border-box;
 
 position: absolute;
 width: 450px;
-height: 50px;
-left: 30px;
-top: 391px;
+height: 60px;
+left: 42px;
+top: 191px;
 
-border: 5px solid #5020A9;
-box-shadow: 6px 14px 2px 13px #5020A9;
-border-radius: 10px;
+border: 3px solid #5020A9;
+box-shadow: 3px 6px 0px 6px #5020A9;
+border-radius: 4px;
 }
 
 .email-icon
 {
 box-sizing: border-box;
 position: absolute;
-left: 57.2%;
-top: 38.79%;
+width: 25px;
+height: 20px;
+left: 90%;
+top: 31.79%;
 }
 
 .form-control
 {
 position: absolute;
+width: 439.9px;
+height: 53px;
 
 font-family: 'Pixelify Sans';
+color: #5020A9;
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
+font-size: 20px;
 line-height: 48px;
 letter-spacing: 0.35em;
 
 color: #5020A9;
-
+background-color: transparent;
 border: 1px solid #5020A9;
 }
 
-/* password section */
+.form-group2
 {
-position: absolute;
-width: 859.16px;
-height: 144px;
-left: 221px;
-top: 638px;
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 450px;
+    height: 60px;
+    left: 42px;
+    top: 300px;
+    
+    border: 3px solid #5020A9;
+    box-shadow: 3px 6px 0px 6px #5020A9;
+    border-radius: 4px;
 }
 
-
-/* Rectangle 3 */
+.pass-icon
 {
 box-sizing: border-box;
-
 position: absolute;
-width: 859.16px;
-height: 144px;
-left: 221px;
-top: 638px;
-
-border: 5px solid #5020A9;
-box-shadow: 6px 14px 2px 13px #5020A9;
-border-radius: 10px;
+width: 22px;
+height: 25px;
+left: 91%;
+top: 31.79%;
 }
 
-/* Vector */
+.form-control2
 {
 position: absolute;
-left: 56.94%;
-right: 39.77%;
-top: 60.7%;
-bottom: 33.5%;
-
-background: #5020A9;
-}
-
-/* Password */
-{
-position: absolute;
-width: 414px;
-height: 56px;
-left: 249px;
-top: 687px;
-
+width: 439.9px;
+height: 53px;
+    
 font-family: 'Pixelify Sans';
+color: #5020A9;
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
+font-size: 20px;
 line-height: 48px;
-letter-spacing: 0.305em;
-
+letter-spacing: 0.35em;
+    
 color: #5020A9;
-
+background-color: transparent;
 border: 1px solid #5020A9;
 }
 
-/* Login */
-{
-position: absolute;
-width: 997px;
-height: 236px;
-left: 153px;
-top: 52px;
-
-font-family: 'Pixelify Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 180px;
-line-height: 216px;
-text-align: center;
-letter-spacing: 0.035em;
-
-color: #5020A9;
-}
-
-
-/* login button */
-{
-position: absolute;
-width: 422px;
-height: 124px;
-left: 435px;
-top: 1094px;
-}
-
-
-/* Login */
+.btn-btn-primary
 {
 position: absolute;
 width: 202px;
 height: 56px;
-left: 565px;
-top: 1128px;
+left: 180px;
+top: 500px;
 
 font-family: 'Pixelify Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
+font-size: 25px;
 line-height: 48px;
 letter-spacing: 0.35em;
 
 color: #5020A9;
-}
 
-
-/* Rectangle 4 */
-{
 box-sizing: border-box;
-
-position: absolute;
-width: 422px;
-height: 124px;
-left: 435px;
-top: 1094px;
-
-border: 2px solid #5020A9;
-box-shadow: 6px 14px 2px 13px #5020A9;
-border-radius: 20px;
+background-color: transparent;
+border: 3px solid #5020A9;
+box-shadow: 3px 6px 0px 6px #5020A9;
+border-radius: 4px;
 }
 
-/* Don’t have account sign up, here */
+.btn-btn-primary:hover
 {
-position: absolute;
-width: 786px;
-height: 77px;
-left: 270px;
-top: 889px;
-
-font-family: 'Pixelify Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-letter-spacing: 0.095em;
-
-color: #342424;
+background-color: #7f12eb0d;
+display: inline-block;
+cursor: url("../static/cursor/hover_cursor.png"), auto;
 }
+
+.signup-text {
+    position: absolute;
+    width: 786px;
+    height: 77px;
+    left: 20%;
+    top: 65%;
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 43px;
+    letter-spacing: 0.095em;
+    
+    color: #342424;
+}
+
+.signup-link {
+    color: #00C9FB; /* Blue color */
+    text-decoration: none; /* Remove underline */
+    font-weight: normal;
+    transition: color 0.3s ease-in-out;
+}
+
+.signup-link:hover {
+    color: #038fb1; 
+    cursor: url("../static/cursor/hover_cursor.png"), auto;
+}
+

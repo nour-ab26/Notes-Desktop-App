@@ -1,0 +1,210 @@
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../static/pretty wallpaper.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    cursor: url("../static/cursor/default_cursor.png"), auto;
+    }
+    
+    
+    form{
+    position: relative;
+    width: 550px;
+    height: 600px;
+    left: 500px;
+    top: 60px;
+    
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0px 15px 40px 4px #6641AC;
+    }
+    
+    .title
+    {
+    position: absolute;
+    left: 25%;
+    top: -130px;
+    
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 216px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    
+    color: #5020A9;
+    
+    }
+    
+    
+    .form-group1
+    {
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 73px;
+    top: 130px;
+    
+    border: 3px solid #5020A9;
+    box-shadow: 3px 6px 0px 6px #5020A9;
+    border-radius: 4px;
+    }
+    
+    .form-control1
+    {
+    position: absolute;
+    width: 390px;
+    height: 44px;
+    
+    font-family: 'Pixelify Sans';
+    color: #5020A9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: 0.35em;
+    
+    color: #5020A9;
+    background-color: transparent;
+    border: 1px solid #5020A9;
+    }
+    
+    .form-group2
+    {
+        box-sizing: border-box;
+        
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        left: 73px;
+        top: 210px;
+        
+        border: 3px solid #5020A9;
+        box-shadow: 3px 6px 0px 6px #5020A9;
+        border-radius: 4px;
+    }
+    
+    
+    .form-control2
+    {
+    position: absolute;
+    width: 390px;
+    height: 44px;
+        
+    font-family: 'Pixelify Sans';
+    color: #5020A9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: 0.35em;
+        
+    color: #5020A9;
+    background-color: transparent;
+    border: 1px solid #5020A9;
+    }
+    
+    .btn-btn-primary
+    {
+    position: absolute;
+    width: 182px;
+    height: 50px;
+    left: 180px;
+    top: 500px;
+    
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: 0.35em;
+    
+    color: #5020A9;
+    
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 3px solid #5020A9;
+    box-shadow: 3px 6px 0px 6px #5020A9;
+    border-radius: 4px;
+    }
+    
+    .btn-btn-primary:hover
+    {
+    background-color: #7f12eb0d;
+    display: inline-block;
+    cursor: url("../static/cursor/hover_cursor.png"), auto;
+    }
+    
+    .form-group3
+    {
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 73px;
+    top: 300px;
+    
+    border: 3px solid #5020A9;
+    box-shadow: 3px 6px 0px 6px #5020A9;
+    border-radius: 4px;
+    }
+    
+    .form-control3
+    {
+    position: absolute;
+    width: 390px;
+    height: 44px;
+    
+    font-family: 'Pixelify Sans';
+    color: #5020A9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: 0.35em;
+    
+    color: #5020A9;
+    background-color: transparent;
+    border: 1px solid #5020A9;
+    }
+
+    .form-group4
+    {
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 73px;
+    top: 390px;
+    
+    border: 3px solid #5020A9;
+    box-shadow: 3px 6px 0px 6px #5020A9;
+    border-radius: 4px;
+    }
+    
+    .form-control4
+    {
+    position: absolute;
+    width: 390px;
+    height: 44px;
+    
+    font-family: 'Pixelify Sans';
+    color: #5020A9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: 0.35em;
+    
+    color: #5020A9;
+    background-color: transparent;
+    border: 1px solid #5020A9;
+    }
+    
+    
