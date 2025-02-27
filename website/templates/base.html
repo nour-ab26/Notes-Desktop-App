@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" , shrink-to-fit=no>
+    <link
+    rel="stylesheet"
+    href="C:\Users\user\OneDrive\Bureau\Flask Web App\website\static\base.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous"
+  />
+  <title>{% block title %}Home{% endblock %}</title>
+</head>
+
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
