@@ -7,28 +7,58 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" , shrink-to-fit=no>
-    <link rel="stylesheet" href="../static/sign_up.css"
+    <link rel="stylesheet" href="../static/home.css"
   />
   <title>Home</title>
 </head>
 <body>
-    <h1 align="center">Notes</h1>
-    <ul class="list-group list-group-flush" id="notes">
+
+   {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% else %}
+    <div class="alert alert-success alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+  <form method="POST" class="main_form">
+    <h1 align="center" class="title">Notes</h1>
+    <ul class="list-group-list-group-flush" id="notes">
       {% for note in user.notes %}
       <li class="list-group-item">
         {{ note.data }}
-        <button type="button" class="close" onClick="deleteNote({{ note.id }})">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="close"  onclick="deleteNote({{ note.id }})">
+          <img src="../static/Union.png" alt="Delete Icon" class="delete-icon" />
         </button>
       </li>
       {% endfor %}
     </ul>
+    <div class="logout-container">
+      <span class="logout-text">Logout</span>
+      <form action="{{ url_for('auth.logout') }}" method="POST" style="display:inline;">
+          <button type="submit" class="logout-btn">
+          <img src="../static/logout button.png" alt="Logout Icon" class="Logout-icon" />
+        </button>
+      </form>
+    </div>
     <form method="POST">
       <textarea name="note" id="note" class="form-control"></textarea>
       <br />
       <div align="center">
-        <button type="submit" class="btn btn-primary">Add Note</button>
+        <button type="submit" class="btn-btn-primary">Add Note</button>
       </div>
     </form>
+    </form>
+    <script src="{{ url_for('static', filename='../static/index.js') }}"></script>
 </body>
 </html>
