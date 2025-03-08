@@ -18,7 +18,7 @@ background: rgba(255, 255, 255, 0.84);
 box-shadow: 0px 15px 40px 4px #6641AC;
 }
 
-/* old notes */
+/* old notes 
 .list-group-list-group-flush{
 position: absolute;
 width: 850px;
@@ -30,7 +30,7 @@ border: 3px solid #5020A9;
 box-shadow: 3px 6px 0px 6px #5020A9;
 border-radius: 4px;
 }
-
+*/
 .title
 {
 position: absolute;
@@ -50,7 +50,20 @@ letter-spacing: 0.035em;
 color: #5020A9;
 }
 
+.notes-container {
+    position: relative;
+    top: 75px;
+    width: auto; /* Fixed width to match the notes */
+    height: 273px; /* Fixed height for the container */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    overflow-x: disabled; /* Disable horizontal scrollbar */
+    margin: 20px auto; /* Center the container */
+    padding: 5px; /* Add some padding */
+    border: none; /* No border */
+}
+
 .list-group {
+    
     padding: 0;
     margin: 0;
     list-style: none;
@@ -59,16 +72,58 @@ color: #5020A9;
 }
 
 .list-group-item {
+
     display: flex;
+    align-items: center ;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 0px 10px;
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+    text-align:left; 
+    letter-spacing: 0.031em;
+    color: #5020A9;
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    overflow-wrap: break-word; /* Alternative to word-wrap for better browser support */
+    white-space: normal;
     
+    position: relative;
+    margin: 20px 0;
+    width: 850px;
+    height: auto;
+    min-height: 45px;
+    left: 90px;
+    top: 5px;
+
+    border: 3px solid #5020A9;
+    box-shadow: 3px 6px 0px 6px #5020A9;
+    border-radius: 4px;
+}
+
+.list-group-item .note-text {
+    flex-grow: 1; /* Allow text to take up remaining space */
+    overflow: hidden; /* Prevent text from overflowing */
+    word-break: break-word; /* Break long words if necessary */
+    max-width: 95%; /* Limit the width of the text */
 }
 
 .list-group-item:last-child {
     border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .list-group-item {
+        width: 95%; /* Adjust width for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+
+    .list-group-item .delete-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .close {
@@ -84,7 +139,7 @@ padding: 5px;
     position: relative;
     width: 30px;
     height: 30px;
-    left: 770px;
+    left: 800px;
     top: 50%;
     background: none;
     border: none;
@@ -100,13 +155,13 @@ padding: 5px;
 
 .form-control
 {
-position: absolute;
-width: 887px;
-height: 100px;
-max-width:  887px;
-max-height: 170px;
-left: 300.5px;
-top: 350px;
+position: relative;
+width: 870px;
+height: 80px;
+max-width:  870px;
+max-height: 80px;
+left: 345px;
+top: 452px;
 
 font-family: 'Pixelify Sans';
 font-style: normal;
@@ -128,7 +183,7 @@ border-radius: 4px;
     width: 130px;
     height: 40px;
     left: 0px;
-    top: -4px;
+    top: 0px;
     font-family: 'Pixelify Sans';
     font-style: normal;
     font-weight: 500;
@@ -142,11 +197,11 @@ border-radius: 4px;
 }
 
 .btn-btn-primary{
-    position: absolute;
+    position: relative;
     width: 212px;
     height: 56px;
-    left: 670px;
-    top: 550px;
+    left: 0px;
+    top: 470px;
     
     font-family: 'Pixelify Sans';
     font-style: normal;
@@ -175,8 +230,8 @@ display: inline-block;
     position:   absolute;
     width: 130px;
     height: 40px;
-    left: 0px;
-    top: -44px;
+    left: 210px;
+    top: 26px;
     font-family: 'Pixelify Sans';
     font-style: normal;
     font-weight: 500;
@@ -221,328 +276,67 @@ padding: 5px;
 
 
 
-
-
-
-
-
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 24.71px;
-top: 12.43px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 14px;
-top: 3px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 14px;
-top: 59.57px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 78.29px;
-top: 59.57px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 35.43px;
-top: 21.86px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 46.14px;
-top: 31.29px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 56.86px;
-top: 40.71px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 67.57px;
-top: 50.14px;
-
-background: #000000;
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 78.29px;
-top: 12.43px;
-
-background: #000000;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 89px;
-top: 3px;
-
-background: #000000;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 67.57px;
-top: 21.86px;
-
-background: #000000;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 46.14px;
-top: 40.71px;
-
-background: #000000;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-/* Rectangle */
-
-position: absolute;
-width: 10.71px;
-height: 9.43px;
-left: 35.43px;
-top: 50.14px;
-
-background: #000000;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-/* Logout  */
-
-
-
-
-
-/* Rectangle 1059 */
-
-position: absolute;
-width: 74.6px;
-height: 67px;
-left: 446.4px;
-top: 140px;
-
-background: rgba(255, 255, 255, 0.85);
-
-
-/* Union */
-
-position: absolute;
-width: 73.81px;
-height: 65.88px;
-left: 446px;
-top: 140.56px;
-
-background: #5020A9;
-
-
-/* Rectangle 1042 */
-
-position: absolute;
-left: 16.7%;
-right: 81.19%;
-top: 8.7%;
-bottom: 90.85%;
-
-background: #000000;
-
-
-/* Rectangle 1043 */
-
-position: absolute;
-left: 16.7%;
-right: 81.19%;
-top: 12.32%;
-bottom: 87.23%;
-
-background: #000000;
-
-
-/* Rectangle 1044 */
-
-position: absolute;
-left: 16.4%;
-right: 83.3%;
-top: 8.7%;
-bottom: 87.23%;
-
-background: #000000;
-
-
-/* Rectangle 1045 */
-
-position: absolute;
-left: 18.81%;
-right: 80.89%;
-top: 8.7%;
-bottom: 87.23%;
-
-background: #000000;
-
-
-/* Rectangle 1050 */
-
-position: absolute;
-left: 17.3%;
-right: 82.4%;
-top: 10.06%;
-bottom: 89.49%;
-
-background: #000000;
-
-
-/* Rectangle 1051 */
-
-position: absolute;
-left: 17.6%;
-right: 82.1%;
-top: 10.51%;
-bottom: 89.04%;
-
-background: #000000;
-
-
-/* Rectangle 1052 */
-
-position: absolute;
-left: 17.9%;
-right: 81.79%;
-top: 10.96%;
-bottom: 88.58%;
-
-background: #000000;
-
-
-/* Rectangle 1056 */
-
-position: absolute;
-left: 17.9%;
-right: 81.79%;
-top: 10.06%;
-bottom: 89.49%;
-
-background: #000000;
-
-
-/* Rectangle 1053 */
-
-position: absolute;
-left: 17%;
-right: 82.7%;
-top: 11.42%;
-bottom: 88.13%;
-
-background: #000000;
-
-
-/* Rectangle 1054 */
-
-position: absolute;
-left: 17.3%;
-right: 82.4%;
-top: 10.96%;
-bottom: 88.58%;
-
-background: #000000;
-
-
-/* Rectangle 1055 */
-
-position: absolute;
-left: 18.21%;
-right: 81.49%;
-top: 11.42%;
-bottom: 88.13%;
-
-background: #000000;
-
-
-/* Rectangle 1057 */
-
-position: absolute;
-left: 18.21%;
-right: 81.49%;
-top: 9.6%;
-bottom: 89.94%;
-
-background: #000000;
-
-
-/* Rectangle 1058 */
-
-position: absolute;
-left: 17%;
-right: 82.7%;
-top: 9.6%;
-bottom: 89.94%;
-
-background: #000000;
-
+   /* General alert styling */
+   .alert {
+    width: 300px;
+    height: 10px;
+    left: 40%;
+    top: 2px;
+    padding: 15px;
+    margin: 0px 0;
+    border-radius: 5px;
+    position: absolute;
+    font-family: 'Pixelify Sans';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.035em;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.close1 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: url("../static/cursor/hover_cursor.png"), auto;
+}
+
+.close1 span {
+    font-weight: bold;
+}
+
+/* Fade-in and show animation */
+.fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+/* Dismissable alerts with the fade-in effect */
+.alert-dismissable .close {
+    visibility: visible;
+}
+
+.alert-dismissable {
+    padding-right: 35px;
+}
