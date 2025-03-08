@@ -36,11 +36,11 @@ The app allows users to:
 ## Screenshots
 Include screenshots of your app to give users a visual preview. For example:
 1. **Login Page**:
-   ![Login Page](../screenshots/login.pngs)
+   ![Login Page](website/screenshots/login.png)
 2. **SignUp Page**:
-   ![SignUp Page](../screenshots/sign-up.png)   
+   ![SignUp Page](website/screenshots/sign-up.png)   
 3. **Home Page**:
-   ![Home Page](../screenshots/home.png)
+   ![Home Page](website/screenshots/home.png)
 
 
 ### Prerequisites
